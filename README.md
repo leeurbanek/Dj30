@@ -57,7 +57,7 @@ You need to create your own private secret key to replace `<my-secret-key>` abov
 >>> print(get_random_string(50, chars))
 ```
 
-Each time you execute the print statement at the end you will get a new random string. Type `>>> quit()` to exit Python and return to the venv. Re-open the .env file `$ nano .env` then copy the new string and replace `<my-secret-key>` in the .env file with the new key. Save and close .env.
+Each time you execute the print statement at the end you will get a new random string. Type `>>> quit()` to exit Python and return to the venv. Copy the new string (highlight it then `ctrl + shift + c`). Re-open the .env file `$ nano .env` then paste the new string `ctrl + shift + v` ovewriting `<my-secret-key>` in the .env file with the new key. Save and close .env.
 
 Quit the virtual environment by entering `$ deactivate` at the prompt.
 
