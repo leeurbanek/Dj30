@@ -32,7 +32,7 @@ Now we'll create a clone of this Git repo on your computer. In the terminal ente
 git clone https://github.com/leeurbanek/Dj30.git <my-project> && cd <my-project>
 ```
 
-That created a Git repository in the current directory named `<my-project>` and then `cd` into that directory. Tthis is the top level directory of the repo (it contains `manage.py` and `.gitignore`).
+That created a Git repository in the current directory named `<my-project>` and then `cd` into that directory. This is the top level directory of the repo (it contains `manage.py` and `.gitignore`).
 
 While we're in our top level directory let's setup the virtual environment next. We will use Python's venv module to do this. First, make sure Python 3 is installed. At the prompt enter `python3 --version`. You should see something like `Python 3.x.x` You must have version 3.3 or newer. If not, search the web to find out if you can install a newer version of Python on your system.
 
@@ -86,7 +86,9 @@ With your text editor open the `.bash_aliases` file. This is where we create the
 # Django Stuff
 
 # remove .pyc, .pyo files and __pycache__ directories
-alias delpyc='find . -type f -name "*.py[co]" -delete -or -type d -name "__pycache__" -delete'
+alias delpyc='\
+  find . -type f -name "*.py[co]" -delete \
+  -or -type d -name "__pycache__" -delete'
 
 # start project virtual environment
 alias proj_venv='\
