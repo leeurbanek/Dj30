@@ -10,8 +10,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 
-from .base import BASE_DIR
-from .base import *
+from .common import *
+from .common import BASE_DIR
 
 
 # ALLOWED_HOSTS = []

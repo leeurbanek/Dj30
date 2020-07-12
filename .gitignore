@@ -56,9 +56,11 @@ cover/
 *.pot
 
 # Django stuff:
+*.bak
 *.log
 db.sqlite3
 migrations/
+TODO
 
 # Environments
 .env

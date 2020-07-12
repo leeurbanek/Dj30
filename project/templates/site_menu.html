@@ -9,9 +9,11 @@
     <a class="p-2 text-dark" href="{% url 'pricing' %}">Pricing</a>
   </nav>
   {% if user.is_authenticated %}
-    <a class="btn btn-outline-primary" href="{% url 'index' %}">Sign Out</a>
+    <a class="btn btn-outline-primary" href="{% url 'account_email' %}">Change Email</a>
+    <a class="btn btn-outline-primary" href="{% url 'account_logout' %}">Sign Out</a>
   {% else %}
-    <a class="btn btn-outline-primary" href="{% url 'index' %}">Sign in</a>
+    <a class="btn btn-outline-primary" href="{% url 'account_login' %}">Sign In</a>
+    <a class="btn btn-outline-primary" href="{% url 'account_signup' %}">Sign Up</a>
   {% endif %}
 </div>
 

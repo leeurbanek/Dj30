@@ -29,3 +29,13 @@ class CustomUserTests(TestCase):
         self.assertTrue(suser.is_active)
         self.assertTrue(suser.is_staff)
         self.assertTrue(suser.is_superuser)
+
+
+# class MessagePageTests(TestCase):
+#     """"""
+#     username = 'user1'
+#     email = 'user1@email.com'
+
+#     def setUp(self):
+#         url = reverse('message')
+#         self.response = self.client.get(url)

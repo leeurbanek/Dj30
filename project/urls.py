@@ -19,15 +19,16 @@ from django.urls import include, path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('accounts/', include('django.contrib.auth.urls')),
 
     # User Defined
+    path('accounts/', include('user.urls')),
     path('', include('page.urls')),
 ]
 
 if settings.DEBUG:  # use django-debug-toolbar
     # https://django-debug-toolbar.readthedocs.io/en/latest/index.html
     import debug_toolbar
+
     urlpatterns = [
         path('__debug__/', include(debug_toolbar.urls)),
     ] + urlpatterns

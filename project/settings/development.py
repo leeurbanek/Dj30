@@ -10,8 +10,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 
-from .base import BASE_DIR, INSTALLED_APPS, MIDDLEWARE
-from .base import *
+from .common import *
+from .common import BASE_DIR, INSTALLED_APPS, MIDDLEWARE
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -63,3 +63,5 @@ DATABASES = {
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
