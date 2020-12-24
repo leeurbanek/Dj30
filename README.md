@@ -1,6 +1,6 @@
 # Dj30
 
-> Django 3.0 Web Framework – *quick* website start-up template.
+> Django 3 Web Framework – *quick* website start-up template.
 
 ## Features
 
