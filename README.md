@@ -1,4 +1,4 @@
-# Dj30
+# Django3
 
 > Django 3 Web Framework – *quick* website start-up template.
 
